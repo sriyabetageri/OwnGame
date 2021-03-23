@@ -1,0 +1,52 @@
+
+var dog;
+
+
+
+
+
+function setup() {
+  createCanvas(800,400);
+  
+  dog = createSprite(400, 200, 50, 50);
+
+  g
+}
+
+function draw() {
+  background("lightblue");  
+
+if(keyDown("RIGHT_ARROW")){
+dog.x = dog.x + 2; 
+}
+
+if(keyDown("LEFT_ARROW")){
+  dog.x = dog.x - 2; 
+  }
+
+  if(keyDown("UP_ARROW")){
+    dog.y = dog.y - 2; 
+    }
+
+  if(keyDown("DOWN_ARROW")){
+      dog.y = dog.y + 2; 
+      }
+
+/*if(keyDown("SPACE")){
+  dog.velocityY = -3;
+
+}
+
+dog.velocityY =dog.velocityY+ 0.8
+*/
+
+
+
+
+  
+
+
+
+
+  drawSprites();
+}
